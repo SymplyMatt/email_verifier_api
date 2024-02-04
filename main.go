@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/SymplyMatt/email_verifier_tool/routes"
+	"github.com/SymplyMatt/email_verifier_api/routes"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
