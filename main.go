@@ -15,14 +15,11 @@ func main() {
 	}
 
 	router := gin.New()
-	// router.Use(gin.Logger())
+	router.Use(gin.Logger())
 	router.Use(cors.Default())
 
 	router.GET("/emails/verify", routes.VerifyEmail)
-	// router.POST("/project/create", routes.AddProject)
-	// router.GET("/projects", routes.GetProjects)
-	// router.PUT("/project/update/:id", routes.UpdateProject)
-	// router.DELETE("/project/delete/:id", routes.DeleteProject)
+
 
 	router.Run(":" + port)
 }
